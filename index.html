@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image.png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image.png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>CV V3</title>
+        <style>
+            body {
+                font-family: Lato, sans-serif;
+                background-color: #f4f4f4;
+                margin: 55px;
+                padding: 75px;
+            }
+            .page {
+                width: 80%;
+                margin: 20px auto;
+                background-color: white;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .header {
+                display: flex;
+                align-items: left;
+                border-bottom: 2px solid #7d3c98;
+                padding-bottom: 125px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+            .header img {
+                border-radius: 20%;
+                margin-right: 1px;
+                width: 200px;
+                height: 200px;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+            .header h1 {
+                color: #bb8fce;
+                font-size: 36px;
+                margin: 20px;
+                margin-top: 45px;
+            }
+            .header h5 {
+                color: gray;
+                font-style: italic;
+                margin: -255px;
+                margin-top: 90px;
+            }
+            .header .text {
+                width: 15%;
+                color: #bb8fce;
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 240px;
+                margin-left: -45px;
+                padding-right: 135px;
+                box-sizing: content-box;
+                white-space: normal;
+                gap: 3px;
+            }
+            .header .display {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                border: 2.3px solid #bb8fce;
+                padding: 15px;
+                gap: 10px;
+                margin-top: 425px;
+                margin-left: -145px;
+            }
+            .header a {
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                font-family: Lato, sans-serif;
+                text-wrap: nowrap;
+                padding: 10px -10px;
+                margin-right: 30px;
+                gap: 10px;
+            }
+            .header p {
+                display: flex;
+                margin: 0;
+                margin-left: -55px;
+                line-height: 1.6;
+                text-wrap: nowrap;
+
+            }
+            .block {
+                margin: 20px auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+                box-sizing: border-box;
+            }
+            .block p {
+                margin: 0;
+                line-height: 1.6;
+            }
+            .block h2 {
+                background-color: #7d3c98;
+                color: white;
+                padding: 15px;
+                border-radius: 5px;
+                margin-bottom : 45px;
+                margin-top: 0;
+                text-align: center;
+            }
+            .block ul {
+                list-style-type: none;
+                padding-left: 0px;
+            }
+            .block ul li h4 {
+                display: inline-flex;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
+            .block ul li {
+                margin-bottom: 5px;
+                margin-left: 20px;
+            }
+            .block ul li::before {
+                content: "♦︎";
+                color: #7d3c98;
+                margin-right: 5px;
+                margin-top: 5px;
+            }
+            .block ol {
+                list-style-type: none;
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                gap: 250px;
+            }
+            .block ol li::before {
+                content: "🌍";
+                margin-right: 10px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            th {
+                background-color: #bb8fce;
+                color: white;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .flex-container {
+                display: flex;
+                gap: 20px;
+            }
+            .flex-container > div {
+                width: 50%;
+                border: 1px dotted #ccc;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: left;
+                padding-left: 25px;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page">
+            <header class="header">
+                <img src="C:\Users\DrMar\Desktop\CV - V3\Photo CV.jpg" alt="Photo de profil" width="160" height="160">
+                <h1>Dorian PIERRE</h1>
+                <h5>Développeur web / logiciel</h5>
+                <div class="text">
+                    <p>Adresse : 3 rue de Savoie, 67540 OSTWALD</p>
+                    <p>Téléphone : 06 35 77 62 75</p>
+                    <p>Email : <a href="mailto:lemajordomeink@gmail.com">lemajordomeink@gmail.com</a></p>
+                    <p>LinkedIn : <a href="https://www.linkedin.com/in/dorian-pierre-b54327347/" target="_blank">https://www.linkedin.com/in/dorian-pierre-b54327347/</a></p>
+                </div>
+                <div class="display">
+                <a href="#section1" class="btn">Profil</a>
+                <a href="#section2" class="btn">Expériences professionnelles</a>
+                <a href="#section3" class="btn">Formation</a>
+                <a href="#section4" class="btn">Compétences</a>
+                <a href="#section5" class="btn">Hobbies</a>
+                <a href="#section6" class="btn">Langues</a>
+                </div>
+            </header>
+                
+            <div class="main">
+                <div class="content">
+                    <div class="block">
+                        <h2 id="section1">Et là qui va là !?</h2>
+                        <p>Et non ! Ce n'est pas l'Inspecteur Gadjet, mais Dorian, ancien Tatoueur, j'ai recherché un domaine dans lequel je pouvais épanouir ma créativité, tout en me construisant un avenir qui désormais, et plus que jamais, s'inscris dans l'ère du numérique. C'est pourquoi j'entame une reconversion dans le développement de logiciel, je suis volontaire et travailleur, j'aime découvrir et tester. Le travail en équipe comme en totale autonomie n'est pas un frein, dû à mes expériences diverses, je sais m'adapter à beaucoup d'environnement différents, ainsi qu'à tout type de public. Mais par dessus tout, je mets un point d'honneur à être le plus professionnel possible dans les missions qui me sont données, je suis donc quelqu'un d'exigeant mais jamais plus envers les autres qu'envers moi-même.</p>
+                    </div>
+
+                    <div class="block">
+                        <h2 id="section2">Expériences professionnelles</h2>
+                        
+                        <ul>
+                            <li><h4>Tatoueur et chef d'entreprise chez Le Majordome INK</h4>
+                                <ul>
+                                    <li>Gestion d'une entreprise</li>
+                                    <li>Réalisation de modèles, de tatouage au dermographe</li>
+                                    <li>Formation sur l'hygiène et la salubrité</li>
+                                </ul>
+                            </li>
+                            <li><h4>Animateur dans diverses entreprises | associations | écoles</h4>
+                                <ul>
+                                    <li>Conception d'activité, de planning</li>
+                                    <li>Organisation générale des locaux d'acceuils</li>
+                                    <li>Régle de sécurité, protection des enfants, premiers secours</li>
+                                    <li>Gestion des équipes d'animation</li>
+                                    <li>Relation clientèle</li>
+                                </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="block">
+                        <h2 id="section3">Formation</h2>
+                        <table>
+                            <tr>
+                                <th scope="col">Année</th>
+                                <th scope="col">Diplome</th>
+                                <th scope="col">Établissement</th>
+                            </tr>
+                            <tr>
+                                <td>2016 - 2025</td>
+                                <td>Tatoueur/Chef d'entreprise</td>
+                                <td>Autodidacte</td>
+                            <tr>
+                                <td>2014 - 2016</td>
+                                <td>BTS Design graphique (non acquis)</td>
+                                <td>École supérieure des métiers de l'image</td>
+                            </tr>
+                            <tr>
+                                <td>2014</td>
+                                <td>Bac STI2D option SIN</td>
+                                <td>Lycée ORT Strasbourg</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="block">
+                        <h2 id="section4">Compétences</h2>
+                        <div class="flex-container">
+                            <div>
+                                <h4>Outils graphiques</h4>
+                                <ul>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Inkskape</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Dévellopement Web et Outils</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="block">
+                        <h2 id="section5">Centres d'intérêts</h2>
+                        <ul>
+                            <li>Sports : Football, Plongée sous-marine, Pêche</li>
+                            <li>Occupation courantes : Jeux vidéos, Cuisine, Balade en moto</li>
+                            <li>Curiosité culturelle : Sciences, Innovation technologique, l'Histoire</li>
+                            <li>Péchés mignons : Le café, et un bon whisky de temps à autre</li>
+                        </ul>
+                    </div>    
+
+                    <div class="block">
+                        <h2 id="section6">Langues</h2>
+                        <ol>
+                            <li>Français : Langue Maternelle</li>
+                            <li>Anglais : Courant</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
